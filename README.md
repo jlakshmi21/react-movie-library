@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+# React Movie Library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a modern movie library web application built using the latest React concepts, including functional components, hooks, and context. The project also supports a dynamic dark mode feature and is fully responsive.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Movie Search:** Search for movies by their title.
+- **Movie Details:** View detailed information about each movie.
+- **Dark Mode:** Toggle between light and dark themes.
+- **Responsive Design:** Works on all screen sizes, including mobile devices.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **React**: The app is built using functional components, and React hooks like `useState`, `useEffect`, and `useContext`.
+- **Context API**: Used for global state management (e.g., for managing movie data and theme).
+- **Custom Hooks**: Utilizes a custom hook (`useMovieContext`) to easily access global state.
+- **TypeScript**: Strong typing for component props and state ensures the app is robust and error-free.
+- **CSS Styling**: Modular CSS styles for both light and dark mode.
+- **ngrok Integration**: Option to expose the local development server for external access.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## React Concepts Implemented
 
-### `npm test`
+- **Functional Components**: All components in the app are built using functional components for a simpler, more readable structure.
+- **React Hooks**:
+  - `useState` to manage the app's local state.
+  - `useEffect` to handle side effects, such as fetching movie data or syncing the dark mode.
+  - `useContext` to provide and consume the global state throughout the app.
+- **Context API**: For managing global states like movies and theme preference.
+- **Conditional Rendering**: Elements are conditionally rendered based on the app's state (for example, light/dark mode and movie details).
+- **Responsive Design**: The app is fully responsive and adapts to different screen sizes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+To run this project locally, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Make sure you have the following installed on your machine:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Node.js** (version 14 or above)
+- **npm** (comes with Node.js)
+- **ngrok** (optional, for exposing your local server online)
 
-### `npm run eject`
+### Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Clone this repository:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   git clone https://github.com/your-username/react-movie-library.git
+   cd react-movie-library
